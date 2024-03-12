@@ -5,14 +5,14 @@ pipeline {
             steps {
                 // Exécutez les commandes de build ici.
                 // Utilisez des commandes compatibles avec Windows
-                sh 'C:\\chemin\\vers\\mvn.cmd clean package'
+                sh 'C:\Users\top20\Downloads\apache-maven-3.9.6\bin package'
             }
         }
         stage('Test') {
             steps {
                 // Exécutez les tests
                 // Utilisez des commandes compatibles avec Windows
-                sh 'C:\\chemin\\vers\\mvn.cmd test'
+                sh 'C:\Users\top20\Downloads\apache-maven-3.9.6\bin test'
             }
         } 
     }
