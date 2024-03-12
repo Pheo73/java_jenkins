@@ -5,14 +5,18 @@ pipeline {
             steps {
                 // Exécutez les commandes de build ici.
                 // Utilisez des commandes compatibles avec Windows
-                sh 'C:\\Users\\top20\\Downloads\\apache-maven-3.9.6\\bin\\mvn.cmd clean package'
+                script {
+                    bat 'C:\\Users\\top20\\Downloads\\apache-maven-3.9.6\\bin\\mvn.cmd clean package'
+                }
             }
         }
         stage('Test') {
             steps {
                 // Exécutez les tests
                 // Utilisez des commandes compatibles avec Windows
-                sh 'C:\Users\top20\IdeaProjects\tp_1_test\src test'
+                script {
+                    bat 'C:\\Users\\top20\\IdeaProjects\\tp_1_test\\src\\test'
+                }
             }
         } 
     }
