@@ -11,14 +11,14 @@ pipeline {
             }
         }
         stage('Test') {
-            steps {
-                // Exécutez les tests
-                // Utilisez des commandes compatibles avec Windows
-                script {
-                    bat 'C:\\Users\\top20\\IdeaProjects\\tp_1_test\\src\\test'
-                }
+             steps {
+            // Exécutez les tests
+            // Utilisez des commandes compatibles avec Windows
+            script {
+                bat 'C:\\Users\\top20\\Downloads\\apache-maven-3.9.6\\bin\\mvn.cmd test'
             }
-        } 
+        }
+    }
     }
     post {
         success {
