@@ -3,8 +3,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                // Exécutez les commandes de build ici.
-                // Utilisez des commandes compatibles avec Windows
+                
                 script {
                     bat 'C:\\Users\\top20\\Downloads\\apache-maven-3.9.6\\bin\\mvn.cmd clean package'
                 }
@@ -12,8 +11,7 @@ pipeline {
         }
         stage('Test') {
              steps {
-            // Exécutez les tests
-            // Utilisez des commandes compatibles avec Windows
+            
             script {
                 bat 'C:\\Users\\top20\\Downloads\\apache-maven-3.9.6\\bin\\mvn.cmd test'
             }
@@ -22,11 +20,9 @@ pipeline {
     }
     post {
         success {
-            // Actions à effectuer en cas de succès du pipeline
             echo 'Le pipeline a réussi!'
         }
         failure {
-            // Actions à effectuer en cas d'échec du pipeline
             echo 'Le pipeline a échoué. Vérifiez les logs pour plus d\'informations.'
         }
     }
