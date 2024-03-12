@@ -3,19 +3,18 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                // Exécutez les commandes de build ici. 
-		// Changer le répertoire de Maven
-                sh '/Users/estherchabi/apache-maven-3.9.6/bin/mvn clean package'
+                // Exécutez les commandes de build ici.
+                // Utilisez des commandes compatibles avec Windows
+                sh 'C:\\chemin\\vers\\mvn.cmd clean package'
             }
         }
         stage('Test') {
             steps {
                 // Exécutez les tests
-		// Changer le répertoire de Maven 
-                sh '/Users/estherchabi/apache-maven-3.9.6/bin/mvn test'
+                // Utilisez des commandes compatibles avec Windows
+                sh 'C:\\chemin\\vers\\mvn.cmd test'
             }
         } 
-
     }
     post {
         success {
@@ -28,3 +27,4 @@ pipeline {
         }
     }
 }
+
