@@ -19,10 +19,10 @@ pipeline {
     }
     post {
         success {
-            echo 'Le pipeline a réussi!'
+            echo 'La pipeline a réussi!'
         }
         failure {
-            echo 'Le pipeline a échoué. Vérifiez les logs pour plus d\'informations.'
+            echo 'La pipeline a échoué. Vérifiez les logs pour plus d\'informations.'
         }
     }
 }
