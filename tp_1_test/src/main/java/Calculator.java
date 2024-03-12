@@ -28,7 +28,7 @@ public class Calculator {
         if (num2 != 0) {
             return num1 / num2;
         } else {
-            throw new ArithmeticException("Division by zero is not allowed");
+            throw new ArithmeticException("division par zero n'est pas autorisé");
         }
     }
 
