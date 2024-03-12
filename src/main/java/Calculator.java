@@ -28,7 +28,7 @@ public class Calculator {
         if (num2 != 0) {
             return num1 / num2;
         } else {
-            throw new ArithmeticException("Division by zero is not allowed");
+            throw new ArithmeticException("La division par zéro n'est pas autorisée");
         }
     }
 
@@ -36,7 +36,7 @@ public class Calculator {
         if (num2 != 0.0) {
             return num1 / num2;
         } else {
-            throw new ArithmeticException("Division by zero is not allowed");
+            throw new ArithmeticException("La division par zéro n'est pas autorisée");
         }
     }
 }
