@@ -14,7 +14,7 @@ public class CalculatorTest {
     public void testAddDoubles() {
         Calculator calculator = new Calculator();
         double result = calculator.add(2.5, 3.5);
-        assertEquals(6.0, result, 0.0001); // Utilisation de delta pour les comparaisons de nombres à virgule flottante
+        assertEquals(6.0, result, 0.0001);
     }
 
     @Test
