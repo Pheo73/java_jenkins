@@ -12,7 +12,7 @@ pipeline {
             steps {
                 // Exécutez les tests
                 // Utilisez des commandes compatibles avec Windows
-                sh 'C:\\Users\\top20\\Downloads\\apache-maven-3.9.6\\bin\\mvn.cmd test'
+                sh 'C:\Users\top20\IdeaProjects\tp_1_test\src test'
             }
         } 
     }
